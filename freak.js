@@ -1,0 +1,1 @@
+export default freakFunction = () => 'Helloy, I`m freack function!))))';

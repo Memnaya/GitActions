@@ -1,10 +1,6 @@
-import request from 'supertest';
-import app from '../index.js';
+import { test, expect } from '@jest/globals';
+import freak from '../freak.js'
 
-describe('GET /', () => {
-  it('should return Hello World', async () => {
-    const res = await request(app).get('/');
-    expect(res.statusCode).toEqual(200);
-    expect(res.text).toBe('Hello World!');
-  });
-});
+test('check freack', () => {
+  expect(freak()).toBe('Helloy, I`m freack function!))))');
+})
